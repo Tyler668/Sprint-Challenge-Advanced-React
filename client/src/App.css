@@ -31,3 +31,11 @@
     transform: rotate(360deg);
   }
 }
+
+
+.player-card{
+  border: 1px solid black;
+  margin: 10px;
+  width: 20%;
+  margin: 10px auto 10px auto;
+}
