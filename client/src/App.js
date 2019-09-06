@@ -2,9 +2,10 @@ import React, { useState, Component } from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 import './App.css';
+import PlayerCards from './components/PlayerCards';
 
 class App extends Component {
-  // const [title, setTitle] = useState('Hello WEB 22!!!');
+  
   constructor() {
     super();
     this.state = {
@@ -24,18 +25,16 @@ class App extends Component {
       .catch(err => { console.log('Oof') })
   }
 
+
+
+
+
+  
+
   render() {
     return (
       <div className="App">
-        <div className='player-container'>
-          {this.state.players.map(player => (
-            <div className='player-card'>
-              <h2>{player.name}</h2>
-              <h3>{player.country}</h3>
-              <h4>{player.searches} searches</h4>
-            </div>
-          ))}
-        </div>
+        <PlayerCards players = {this.state.players} />
       </div>
     );
   }
