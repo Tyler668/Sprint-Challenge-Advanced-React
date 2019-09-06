@@ -10,7 +10,7 @@ const PlayerCards = (props) => {
     };
 
     return (
-        <div>
+        <div className = 'outer'>
             <button onClick = {toggleMode} className = 'dm-Toggle'>Dark Mode</button>
             <div className='player-container'>
                 {props.players.map(player => (
