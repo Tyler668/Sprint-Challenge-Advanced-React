@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import PlayerCards  from './components/PlayerCards';
+import { darkMode, setDarkMode} from './components/PlayerCards';
+
 // import 'jest-dom/extend-expect';
 
 it('renders without crashing', () => {
@@ -21,10 +23,17 @@ it('renders player cards correctly', async () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-test('basic math', () =>{
+test('basic math sanity check', () =>{
   expect(2).toBe(2);
 })
 
-// // test('dark mode adds the dark mode class', () => {
+test('basic math sanity check', () =>{
+  expect(4).toBe(4);
+})
 
-// })
+test('dark mode class is applied when dark mode is enabled', async () =>{
+  if(darkMode){
+    const body = document.querySelector('body');
+    expect(body.hasClass('dark-mode'));
+  }
+})

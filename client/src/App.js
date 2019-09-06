@@ -31,7 +31,6 @@ class App extends Component {
 
   componentWillUnmount() {
     this._isMounted = false;
-    
   };
 
 
