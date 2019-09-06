@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { render, fireEvent} from '@testing-library/jest-dom';
 import PlayerCards  from './components/PlayerCards';
-import * as rtl from '@testing-library/react';
-import 'jest-dom/extend-expect';
+// import 'jest-dom/extend-expect';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
@@ -12,16 +10,21 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-it('renders player cards correctly', () => {
+test('should have text Megan Rapinoe',  async ()=>{
+  const {findByText} = await render(<PlayerCards />)
+  findByText(/megan rapinoe/i)
+})
+
+it('renders player cards correctly', async () => {
   const div = document.createElement('div');
   ReactDOM.render(<PlayerCards />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
 
 test('basic math', () =>{
-  expect(1+1).toBe(2);
+  expect(2).toBe(2);
 })
 
-// test('dark mode adds the dark mode class', () => {
+// // test('dark mode adds the dark mode class', () => {
 
 // })
