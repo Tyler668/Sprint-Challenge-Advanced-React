@@ -31,3 +31,50 @@
     transform: rotate(360deg);
   }
 }
+
+
+body{
+  background: rgb(213, 239, 255);
+}
+
+.player-card{
+  margin: 10px;
+  width: 15%;
+  margin: 15px auto 15px auto;
+  background: powderblue;
+  color: white;
+  border: 5px solid white;
+  text-shadow: #081B33 1px 0 10px;
+  box-shadow:  #081B33 1px 0 10px;
+}
+
+
+.player-container{
+display: flex;
+flex-flow: row wrap;  
+background: rgb(213, 239, 255);
+}
+
+.dark-mode{
+  background: #081B33;
+  color:  #081B33;
+  text-shadow: powderblue 1px 0 10px;
+  box-shadow:  powderblue 1px 0 10px;
+}
+
+.card-dark-mode{
+  color:  #081B33;
+  border: 5px solid #081B33;
+  text-shadow: powderblue 1px 0 10px;
+  box-shadow:  powderblue 1px 0 10px;
+}
+
+.dm-Toggle{
+border: none;
+padding: .5rem 2rem .5rem 2rem;
+margin: 20px;
+color:  #081B33;
+background: lightskyblue;
+font-size: 1.2rem;
+border-radius: 20px;
+}
