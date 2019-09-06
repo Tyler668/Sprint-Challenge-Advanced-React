@@ -27,13 +27,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.state.players.map(player => (
-          <div className = 'player-card'>
-            <h2>{player.name}</h2>
-            <h3>{player.country}</h3>
-            <h4>{player.searches} searches</h4>
-          </div>
-        ))}
+        <div className='player-container'>
+          {this.state.players.map(player => (
+            <div className='player-card'>
+              <h2>{player.name}</h2>
+              <h3>{player.country}</h3>
+              <h4>{player.searches} searches</h4>
+            </div>
+          ))}
+        </div>
       </div>
     );
   }

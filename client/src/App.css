@@ -33,9 +33,25 @@
 }
 
 
+
+
 .player-card{
-  border: 1px solid black;
   margin: 10px;
-  width: 20%;
-  margin: 10px auto 10px auto;
+  width: 15%;
+  margin: 15px auto 15px auto;
+  background: powderblue;
+  color: rgb(69, 98, 230);
+  border: 5px solid lightskyblue;
+}
+
+
+.player-container{
+display: flex;
+flex-flow: row wrap;  
+background: lightskyblue;
+}
+
+.dark-mode{
+  background: #081B33;
+  color:  #081B33;
 }
